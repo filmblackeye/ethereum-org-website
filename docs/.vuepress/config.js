@@ -5,9 +5,10 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: translate('page-home'), link: '/' },
+      { text: translate('page-learn'), link: '/learn/' },
       { text: translate('page-beginners'), link: '/beginners/' },
       { text: translate('page-use'), link: '/use/' },
-      { text: translate('page-learn'), link: '/learn/' },
+      { text: translate('page-getting-started'), link: '/getting-started/' },
       { text: translate('page-developers'), link: '/developers/' }
     ]
   },
@@ -77,6 +78,7 @@ module.exports = {
       title: translate('ethereum'),
       nav: [
         { text: translate('page-home'), link: '/' },
+        { text: translate('page-getting-started'), link: '/getting-started/' },
         { text: translate('page-beginners'), link: '/beginners/' },
         { text: translate('page-use'), link: '/use/' },
         { text: translate('page-learn'), link: '/learn/' },
@@ -161,6 +163,7 @@ module.exports = {
       title: translate('ethereum', 'ko-KR'),
       nav: [
         { text: translate('page-home', 'ko-KR'), link: '/ko/' },
+        { text: translate('page-getting-started'), link: '/ko/getting-started/' },
         { text: translate('page-beginners', 'ko-KR'), link: '/ko/beginners/' },
         { text: translate('page-use', 'ko-KR'), link: '/ko/use/' },
         { text: translate('page-learn', 'ko-KR'), link: '/ko/learn/' },
