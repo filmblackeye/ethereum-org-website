@@ -47,7 +47,6 @@ const translations = {
     'page-beginners': 'Beginners',
     'page-use': 'Use',
     'page-learn': 'Learn',
-    'page-get-started': 'Get Started',
     'page-developers': 'Developers'
   },
   'de-DE': {
@@ -377,7 +376,6 @@ const translations = {
     'page-beginners': '입문자',
     'page-use': '사용법',
     'page-learn': '배우기',
-    'page-get-started': 'Get Started',
     'page-developers': '개발자 가이드'
   },
   'sk-SK': {

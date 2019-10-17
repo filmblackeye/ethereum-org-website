@@ -1,13 +1,13 @@
 <template>
   <div id="wrapper" :class="pageClasses">
     <Header :class="{ 'home': isLanding }" @toggle-sidebar="toggleSidebar" @toggle-mode="toggleMode" />
-    <Hero v-if="isLanding" :dark="darkMode" />
+    <Hero v-if="showHero" :dark="darkMode" />
     <main :class="contentClasses"><Content/></main>
     <Sidebar :items="sidebarItems" @close-sidebar="closeSidebar" />
     <Footer :class="{ 'home': isLanding }" />
 
     <a href="https://hackernoon.com/rethinking-the-identity-of-ethereumorg-l718w347l" target="_blank">
-      <button v-if="isLanding" class="announcement">
+      <button v-if="showHero" class="announcement">
         {{linkText}} <span class="accent">{{linkTextMore}}</span>
       </button>
 
@@ -55,6 +55,10 @@
     computed: {
       isLanding() {
         return this.$page.frontmatter && this.$page.frontmatter.layout === "home"
+      },
+      showHero() {
+        return (this.$page.frontmatter && this.$page.frontmatter.layout === "home")
+          && !this.$page.frontmatter.hideHero
       },
       posts() {
         return this.$site.pages
